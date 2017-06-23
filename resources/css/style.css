@@ -276,34 +276,7 @@ button {
 }
 
 
-/*
-#section2 {
-  padding-top: 32px;
-  background-color: #efefef;
-  border-top: #7c7c7c;
-  border-top-style: solid;
-  border-top-width: thin;
-}
 
-.section-header {
-
-}
-
-.courses {
-  display: flex;
-  justify-content: center;
-}
-
-.course {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 50px;
-
-}
-*/
 
 .feature .image-container {
   margin: 0 auto;
@@ -323,7 +296,83 @@ button {
   color: #4a4a4a;
 }
 
-/*
-.feature .content {
-  padding: 2.5rem 0;
+/*Section 3*/
+
+.video-container {
+  display: flex;
+  align-items: center;
+  width: 100% !important;
+  height: auto;
+
+}
+
+.title h1 {
+  text-align: center;
+}
+
+
+.caption {
+  margin-top: 287px;
+}
+
+.video {
+  width: 60%;
+  height: 255px;
+  background-image: url("../../resources/images/information-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  align-self: flex-start;
+
+}
+
+.video-right-side {
+  margin-left: 16px;
+  height: 100%;
+  width: 423px;
+}
+
+.video-box-2 {
+  display: flex;
+  align-items: center;
+  height: 168px;
+
+}
+
+.video-2 {
+  width: 35%;
+  height: 132px;
+  background-image: url("../../resources/images/thesis-now-and-then.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 16px;
+
+}
+
+.video-2-text {
+  padding-left: 16px;
+}
+
+.video-box-1 {
+  display: flex;
+  align-items: center;
+  background-color: #efefef;
+  height: 168px;
+
+}
+
+.video-1 {
+  width: 35%;
+  height: 132px;
+  background-image: url("../../resources/images/thesis-fisma.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 16px;
+
+
+}
+
+.video-1-text {
+  padding-left: 16px;
 }
