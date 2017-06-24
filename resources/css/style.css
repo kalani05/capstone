@@ -1,12 +1,35 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 14px;
+  font-family: 'Fira Sans', sans-serif;
+  color: #3b3b3b;
+
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.site-container {
+  margin-left: 24px;
+
 }
 
 /* nav bar */
@@ -30,6 +53,12 @@ header li {
 
 header a {
   text-decoration: none;
+  color: inherit;
+
+}
+
+header a:hover {
+  color: #0074D9;
 }
 
 nav {
@@ -46,10 +75,12 @@ nav {
 
 .logo img {
   height: 40px;
+
 }
 
 .logo span {
   margin-left: 5px;
+  font-size: 1.8rem;
 }
 
 .main-content {
@@ -59,10 +90,7 @@ nav {
 
 }
 
-.site-container {
-  margin-left: 24px;
 
-}
 
 
 /* Banner */
@@ -75,7 +103,8 @@ nav {
   height: auto;
   padding-top: 32px;
   padding-bottom: 32px;
-
+  margin-left: -24px;
+  padding-right: 50px;
 }
 
 .banner-pic {
@@ -84,7 +113,7 @@ nav {
   background-image: url("../../resources/images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
+  margin-left: 24px;
 }
 
 .cta {
@@ -92,8 +121,14 @@ nav {
 
 }
 
+.cta span {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
 button {
-  background-color: grey;
+  background-color: #3b3b3b;
   border: none;
   color: white;
   padding-top: 8px;
@@ -108,30 +143,44 @@ button {
 
 }
 
-/*Section 1*/
-
-.section1 {
-  display: flex;
-  align-items: center;
-  width: 100% !important;
-  height: auto;
-
+button:hover {
+  background-color: #0074D9;
 }
 
-.info-heading {
-  margin-top: 287px;
+/*Section 1*/
+
+.info-heading h2 {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.info-heading p {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 1.8;
 }
 
 .information {
-  width: 60%;
-  height: 255px;
-  background-image: url("../../resources/images/information-main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  align-self: flex-start;
+  display: flex;
+  align-items: flex-start;
+  width: 100% !important;
+  height: auto;
 
+
+}
+
+.info-left-side {
+  width: 60%;
+  margin-top: 32px;
+}
+
+.info-left-side img {
+  width: 100%;
 }
 
 .info-right-side {
@@ -141,6 +190,25 @@ button {
   margin-left: 24px;
   height: 100%;
   width: 423px;
+}
+
+.info-text span {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.info-text h3 {
+  margin-bottom: 8px;
+}
+
+.info-text a {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #0074D9;
+}
+
+.info-text p {
+  margin-top: 8px;
 }
 
 .info-box-1 {
@@ -157,7 +225,7 @@ button {
 
 .info-1 {
   width: 35%;
-  height: 110px;
+  height: 150px;
   background-image: url("../../resources/images/information-orientation.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,7 +233,7 @@ button {
 
 }
 
-.info-1-text {
+.info-text {
   padding-left: 16px;
 }
 
@@ -179,7 +247,7 @@ button {
 
 .info-2 {
   width: 35%;
-  height: 110px;
+  height: 150px;
   background-image: url("../../resources/images/information-campus.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,29 +255,19 @@ button {
 
 }
 
-.info-2-text {
-  padding-left: 16px;
-}
-
-.info-box-3 {
+.info-box-4 {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 180px;
   background-color: #efefef;
   padding-bottom: 16px;
   padding-top: 16px;
-  border-bottom: #efefef;
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-  border-bottom: #4f4f4f;
-  border-top-style: solid;
-  border-top-width: thin;
-  border-top: #efefef;
 }
 
-.info-3 {
+.info-4 {
   width: 35%;
-  height: 110px;
+  height: 150px;
   background-image: url("../../resources/images/information-guest-lecture.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,19 +275,15 @@ button {
 
 }
 
-.info-3-text {
-  padding-left: 16px;
-}
-
-
-
-
 /*Section 2*/
 
-#section1 {
+#section2 {
   display: flex;
   justify-content: center;
   background-color: #efefef;
+  margin-left: -24px;
+  padding-left: 24px;
+  padding-bottom: 32px;
 }
 
 @media only screen and (max-width: 520px) {
@@ -242,9 +296,12 @@ button {
 
 }
 
-#section1 h1 {
+#section2 h1 {
   width: 800px;
   text-align: center;
+  padding: 32px 0;
+  margin: 0 0;
+
 }
 
 .icons {
@@ -255,8 +312,12 @@ button {
 
 .icon {
   flex-direction: column;
-  margin: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
   width: 250px;
+  background-color: white;
+  height: 290px;
+  margin-bottom: 16px;
 }
 
 .icon img {
@@ -268,64 +329,85 @@ button {
 }
 
 .description {
-  margin-top: -16px;
-  background-color: white;
+  margin-top: -3px;
   padding-left: 16px;
+  padding-right: 16px;
   padding-top: 16px;
   padding-bottom: 32px;
 }
 
-
-
-
-.feature .image-container {
-  margin: 0 auto;
+.description h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 0px;
 }
 
-.feature h2 {
-  padding-bottom: .5rem;
-  font-size: 2.25rem;
-  font-weight: bold;
-  color: #4a4a4a;
-}
-
-.feature h3 {
+.description h3 {
   font-size: 1rem;
-  line-height: 1.2;
   font-weight: 300;
-  color: #4a4a4a;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
 }
+
+.description span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 0px;
+
+}
+
+
+
+
 
 /*Section 3*/
 
+.video-left-side {
+  width: 60%;
+}
+
 .video-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 100% !important;
   height: auto;
+  margin-bottom: 32px;
 
 }
 
 .title h1 {
   text-align: center;
-}
-
-
-.caption {
-  margin-top: 287px;
-}
-
-.video {
-  width: 60%;
-  height: 255px;
-  background-image: url("../../resources/images/information-main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 32px;
   margin-bottom: 32px;
-  align-self: flex-start;
-
 }
+
+
+/*.caption {
+  margin-top: 287px;
+}*/
+
+video {
+  width: 100%;
+}
+
+.caption h2 {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.caption p {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+
 
 .video-right-side {
   margin-left: 16px;
@@ -375,4 +457,25 @@ button {
 
 .video-1-text {
   padding-left: 16px;
+}
+
+/*footer*/
+footer {
+  background-color: #ffffff;
+  border-top-style: solid;
+  border-top-width: thin;
+  border-color: #efefef;
+  padding: 1.5rem 24px;
+  height: 62px;
+  color: #787878;
+  margin-left: -24px;
+}
+
+footer .content {
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
 }
